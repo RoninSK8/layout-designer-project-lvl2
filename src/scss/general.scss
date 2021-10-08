@@ -1,0 +1,91 @@
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.ttf');
+}
+
+body {
+  font: 18px/27px 'Roboto', serif;
+  color: #cacaca;
+  background: #08020d;
+}
+
+h1 {
+  font: bold 38px/57px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font: bold 60px/90px;
+  text-transform: capitalize;
+}
+
+section {
+  margin: 200px 0;
+}
+
+.image {
+  // background-image: url('...');
+  background-position: center;
+  background-size: cover;
+}
+
+.text-size-small {
+  font-size: 12,8px;
+}
+
+.text-size-1 {
+  font-size: 16px;
+}
+
+.text-size-2 {
+  font-size: 24px;
+}
+
+.text-size-3 {
+  font-size: 32px;
+}
+
+.text-size-4 {
+  font-size: 40px;
+}
+
+.text-size-5 {
+  font-size: 48px;
+}
+
+.text-size-6 {
+  font-size: 56px;
+}
+
+.text-size-7 {
+  font-size: 64px;
+}
+
+@media (min-width: 1240px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 414px) {
+  h1 {
+    font: bold 30px/45px;
+  }
+
+  h2 {
+    font: bold 18px/27px;
+  }
+}
