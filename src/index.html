@@ -10,23 +10,94 @@
     </head>
     <body>
         <header>
-            <div class="container bg-image-header">
-                <div class="logo">
-                    <img class="logo-image" src="images/logo.svg" alt="логотип">
+            <div class="container flex-row">
+                <div class="logo flex-row mr-90">
+                    <img class="logo-image mr-16" src="images/logo.svg" alt="логотип">
                     <span>MUSIC BOX</span>
                 </div>
-                <div class="navigation">
-                    <ul>
-                        <li><a href="#" class="nav-item">ГЛАВНАЯ</a></li>
-                        <li><a href="#" class="nav-item">КАТАЛОГ</a></li>
-                        <li><a href="#" class="nav-item">ИСПОЛНИТЕЛИ</a></li>
-                        <li><a href="#" class="nav-item">КОНТАКТЫ</a></li>
-                    </ul>
-                </div>
+                <ul class="flex-row navigation">
+                    <li><a href="#" class="nav-item uppercase">ГЛАВНАЯ</a></li>
+                    <li><a href="#" class="nav-item uppercase">КАТАЛОГ</a></li>
+                    <li><a href="#" class="nav-item uppercase">ИСПОЛНИТЕЛИ</a></li>
+                    <li><a href="#" class="nav-item uppercase">КОНТАКТЫ</a></li>
+                </ul>
+                <input type="search" placeholder="ПОИСК..." class="search ml-auto">
             </div>
         </header>
         <main>
-            <h1>HELLO</h1>
+            <section id="page-description" class="page-description bg-image-header">
+                <div class="flex-column center container">
+                    <h1 class="white">онлайн музыка где угодно</h1>
+                    <h2 class="white">без ограничений</h2>
+                    <p class="description white text-size-1">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                    <form class="signup-form">
+                        <input type="text" class="input-form white" name="Имя" placeholder="Имя">
+                        <input type="text" class="input-form white" name="Email" placeholder="Email">
+                        <button type="submit" class="signup-submit">Получить доступ</button>
+                    </form>
+                </div>
+            </section>
+            <section id="page-pricing" class="container center page-pricing">
+                <h2 class="mb-45 white">Формы подписки</h2>
+                <div class="pricing flex gap-50">
+                    <div class="pricing-item center bg-image-free">
+                        <h3 class="mb-200 white">Бесплатная</h3>
+                        <p class="pricing-value white">0</p>
+                        <a href="#" class="btn text-size-1">Оформить</a>
+                        <p class="pricing-footer white text-size-small mb-0 mt-64">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+                    </div>
+                    <div class="pricing-item center bg-image-standart">
+                        <h3 class="mb-200 white">Стандартная</h3>
+                        <p class="pricing-value white">250</p>
+                        <a href="#" class="btn text-size-1">Оформить</a>
+                        <p class="pricing-footer white text-size-small mb-0 mt-64">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+                    </div>
+                    <div class="pricing-item center bg-image-premium">
+                        <h3 class="mb-200 white">Премиум</h3>
+                        <p class="pricing-value white">500</p>
+                        <a href="#" class="btn text-size-1">Оформить</a>
+                        <p class="pricing-footer white text-size-small mb-0 mt-64">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+                    </div>
+                </div>
+                <p class="white text-size-1 mt-43 mb-0">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+            </section>
+            <section id="page-news" class="container pt-100">
+                <h2 class="white center">Последние новости</h2>
+                <div class="news-item flex-row gap-50 mt-48">
+                    <img src="images/Music to Be Murdered By.png" class="news-image" alt="Music to Be Murdered By">
+                    <div class="news-content flex-column">
+                        <div class="news-body flex-column">
+                            <h3 class="white mb-30">Music To Be Murdered By</h3>
+                            <p class="mt-0 mb-30">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+                        </div>
+                        <div class="news-footer">
+                            <div class="news-author flex-row gap-16">
+                                <img src="images/avatar.png" alt="Music box avatar" class="author-avatar">
+                                <span class="author-name">Music box</span>
+                                <span class="news-date">17/01/2020</span>
+                            </div>
+                            <a href="#" class="btn">К альбому</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item flex-row gap-50 mt-65">
+                    <div class="news-content flex-column">
+                        <div class="news-body">
+                            <h3 class="white mb-30">Ordinary Man</h3>
+                            <p class="mt-0 mb-30">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+                        </div>
+                        <div class="news-footer">
+                            <div class="news-author flex-row gap-16">
+                                <img src="images/avatar.png" alt="Music box avatar" class="author-avatar">
+                                <span class="author-name">Music box</span>
+                                <span class="news-date">24/02/2020</span>
+                            </div>
+                            <a href="#" class="btn">К альбому</a>
+                        </div>
+                    </div>
+                    <img src="images/Ordinary Man.png" alt="Ordinary Man">
+                </div>
+            </section>
         </main>
         <footer>
 

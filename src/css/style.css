@@ -1,47 +1,403 @@
-/** CSS STYLE **/
+@charset "UTF-8";
 @font-face {
   font-weight: 400;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
 }
-
 @font-face {
-  font-weight: 400;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.ttf');
+  font-weight: 500;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf");
 }
-
 @font-face {
   font-weight: 700;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.ttf');
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
 }
-
-
 body {
-  font: 18px/27px 'Roboto', serif;
+  font: 18px/27px "Roboto", serif;
   color: #cacaca;
   background: #08020d;
+  margin: 0;
 }
 
 h1 {
-  font: bold 38px/57px;
-  text-transform: capitalize;
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
 }
 
 h2 {
-  font: bold 60px/90px;
-  text-transform: capitalize;
+  margin: 0;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
 }
 
+h3 {
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 1200px;
+}
 
-@media (max-width: 414px) {
+.image {
+  background-position: center;
+  background-size: cover;
+}
+
+.center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-16 {
+  margin-right: 16px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mr-90 {
+  margin-right: 90px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mt-43 {
+  margin-top: 43px;
+}
+
+.mt-48 {
+  margin-top: 48px;
+}
+
+.mt-64 {
+  margin-top: 64px;
+}
+
+.mt-65 {
+  margin-top: 65px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.text-size-small {
+  font-size: 12.8px;
+  line-height: 150%;
+}
+
+.text-size-1 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.text-size-2 {
+  font-size: 24px;
+}
+
+.text-size-3 {
+  font-size: 32px;
+}
+
+.text-size-4 {
+  font-size: 40px;
+}
+
+.text-size-5 {
+  font-size: 48px;
+}
+
+.text-size-6 {
+  font-size: 56px;
+}
+
+.text-size-7 {
+  font-size: 64px;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  margin-top: 25px;
+  font-size: 11px;
+}
+
+.logo-image {
+  width: 24px;
+  height: 24px;
+}
+
+.bg-image-header {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 24px;
+}
+.navigation .nav-item {
+  font-size: 11px;
+  color: #CACACA;
+  padding: 2px 0;
+  text-decoration: none;
+}
+.navigation .flex-row {
+  padding: 24px;
+  color: honeydew;
+}
+
+.nav-item:hover {
+  color: #FFFFFF;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  width: 248px;
+  height: 25px;
+  padding: 5px 10px;
+  background: #3C3B3D;
+  border-radius: 50px;
+  border-style: none;
+}
+
+.main-page {
+  height: 750px;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-description {
+  padding: 200px 0;
+}
+
+.description {
+  margin-top: 31px;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+
+.signup-submit {
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 5px;
+  background-color: #34C176;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+}
+
+.signup-form {
+  margin: auto;
+  max-width: 570px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.input-form {
+  box-sizing: border-box;
+  width: 273px;
+  height: 50px;
+  padding-left: 20px;
+  border: 2px solid #CACACA;
+  border-radius: 3px;
+  font-weight: 700;
+  background: transparent;
+}
+
+.input-form::placeholder {
+  color: #FFFFFF;
+}
+
+.page-pricing {
+  padding-top: 100px;
+}
+
+.pricing-item {
+  box-sizing: border-box;
+  padding: 24px 1.5rem 64px 1.5rem;
+  width: 366.6666666667px;
+  border-radius: 1rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.pricing-value {
+  font-size: 64px;
+  line-height: 1em;
+  margin: 0 0 40px 0;
+}
+
+.pricing-value::after {
+  position: relative;
+  top: -8px;
+  left: 16px;
+  content: "РУБ.";
+  font-size: 32px;
+  vertical-align: top;
+  color: #FFFFFF;
+}
+
+.btn {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-style: none;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  border: 1px solid #FFFFFF;
+}
+
+.bg-image-free {
+  background-image: url(../images/subscribe_1.png);
+}
+
+.bg-image-standart {
+  background-image: url(../images/subscribe_2.png);
+}
+
+.bg-image-premium {
+  background-image: url(../images/subscribe_3.png);
+}
+
+.news-item .news-image,
+.news-item .news-content {
+  width: 575px;
+}
+
+.news-body h3 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 45px;
+  text-transform: none;
+}
+.news-body p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+}
+
+.author-name {
+  margin: 0;
+  color: #F89202;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19.2px;
+  text-transform: uppercase;
+}
+
+.news-date {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19.2px;
+}
+
+.news-footer .btn {
+  font-size: 12px;
+  line-height: 19.2px;
+  color: #CACACA;
+  display: inline-block;
+  width: auto;
+  margin-top: 48px;
+  padding: 16px 30px;
+  border: 1px solid #CACACA;
+}
+
+@media (max-width: 1240px) {
   h1 {
-    font: bold 30px/45px;
+    text-transform: none;
   }
 
   h2 {
-    font: bold 18px/27px;
+    text-transform: uppercase;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
