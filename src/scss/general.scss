@@ -77,20 +77,36 @@ h3 {
   margin-right: 16px;
 }
 
-.mb-30 {
-  margin-bottom: 30px;
-}
-
 .mr-90 {
   margin-right: 90px;
 }
 
-.mb-200 {
-  margin-bottom: 200px;
-}
-
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-200 {
+  margin-bottom: 200px;
 }
 
 .m-0 {
@@ -375,10 +391,6 @@ header {
 
 // ------------------------News section--------------------------//
 
-.news {
-
-}
-
 .news-item {
   .news-image,
   .news-content {
@@ -451,7 +463,49 @@ header {
     }
 }
 
-// ---------------------------------------------------------------//
+// -----------------------Mobile app section-----------------------------//
+
+.mobile-app-description {
+  margin: 0;
+  width: 600px;
+}
+
+.mobile-app-image{
+  margin: 0 auto;
+}
+
+.download-mobile-app {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  color: $white;
+  background: $red;
+
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  // margin-top: 48px;
+  padding: 16px 40px;
+  border-radius: 32px;
+  // text-transform: uppercase;
+  // color: $white;
+  // border-style: none;
+  // cursor: pointer;
+  // background: transparent;
+  // text-decoration: none;
+
+  border: none;
+
+  // box-sizing: border-box;
+  // width: 273px;
+  // height: 50px;
+  // padding-left: 20px;
+  // border: 2px solid $dark-gray;
+  // border-radius: 3px;
+  // font-weight: 700;
+}
+
+
+// ----------------------------------------------------------------------//
 // @media (min-width: 1240px) {
 //   .container {
 //     width: 1200px;
