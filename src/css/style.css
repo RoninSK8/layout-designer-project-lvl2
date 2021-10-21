@@ -141,6 +141,22 @@ h3 {
   margin-top: 100px;
 }
 
+.pt-40 {
+  padding-top: 40px;
+}
+
+.pb-49 {
+  padding-bottom: 49px;
+}
+
+.pt-62 {
+  padding-top: 62px;
+}
+
+.pb-72 {
+  padding-bottom: 72px;
+}
+
 .pt-100 {
   padding-top: 100px;
 }
@@ -156,7 +172,7 @@ h3 {
 
 .text-size-1 {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
 }
 
 .text-size-2 {
@@ -183,12 +199,20 @@ h3 {
   font-size: 64px;
 }
 
-.gap-50 {
-  gap: 50px;
-}
-
 .gap-16 {
   gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.gap-50 {
+  gap: 50px;
 }
 
 header {
@@ -426,6 +450,47 @@ header {
   padding: 16px 40px;
   border-radius: 32px;
   border: none;
+}
+
+footer h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  min-width: 270px;
+}
+
+.border-top {
+  border-top: 1px solid #CACACA;
+  box-sizing: border-box;
+  border-radius: 0px;
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #CACACA;
+}
+
+.footer-link:hover {
+  color: #FFFFFF;
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
 
 @media (max-width: 1240px) {
