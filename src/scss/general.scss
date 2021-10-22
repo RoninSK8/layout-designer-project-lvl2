@@ -519,6 +519,13 @@ header {
   text-transform: none;
 }
 
+// --------------------------Artist main------------------------------//
+
+.bg-image-artist {
+  background-image: url(../images/Morten\ Harket.png);
+  background-position: center;
+  background-size: cover;
+}
 
 // --------------------------Footer------------------------------//
 
@@ -574,12 +581,6 @@ footer {
 }
 
 // ----------------------------------------------------------------------//
-
-// @media (min-width: 1240px) {
-//   .container {
-//     width: 1200px;
-//   }
-// }
 
 @media (max-width: 1240px) {
 

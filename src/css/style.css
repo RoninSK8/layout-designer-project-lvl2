@@ -457,6 +457,12 @@ header {
   text-transform: none;
 }
 
+.bg-image-artist {
+  background-image: url(../images/Morten\ Harket.png);
+  background-position: center;
+  background-size: cover;
+}
+
 footer h2 {
   font-size: 18px;
   line-height: 27px;
