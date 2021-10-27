@@ -335,7 +335,7 @@ header {
 }
 
 .page-description {
-  padding: 200px 0;
+  padding: 250px 0 250px 0;
 }
 
 .description {
@@ -606,8 +606,12 @@ header {
 
 // --------------------------Discography-----------------------------//
 
-.album-cover {
+.discography-item {
   width: 250px;
+}
+
+.album-cover {
+  width: 100%;
   display: block;
 }
 
@@ -620,8 +624,12 @@ header {
 
 // --------------------------Similar artists--------------------------//
 
-.artist-cover {
+.similar-item {
   width: 250px;
+}
+
+.artist-cover {
+  width: 100%;
   display: block;
 }
 
@@ -688,6 +696,24 @@ footer {
 
 @media (max-width: 1240px) {
 
+  h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   .container {
     box-sizing: border-box;
     padding-left: 20px;
@@ -716,24 +742,6 @@ footer {
 
   .search {
     width: 100%;
-  }
-
-  h1 {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 45px;
-  }
-
-  h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .page-description {
@@ -794,6 +802,25 @@ footer {
   }
 
   .footer-bottom {
+    flex-direction: column;
+  }
+
+  // ------------------------Artist--------------------------//
+  
+  .page-description {
+    padding: 225px 0 250px 0;
+  }
+
+  .popular-track {
+    width: 100%;
+  }
+
+  .discography-item,
+  .similar-item {
+    width: 137px;
+  }
+
+  .artist-btn {
     flex-direction: column;
   }
 }
