@@ -16,9 +16,7 @@
   src: url('../fonts/Roboto-Bold.ttf');
 }
 
-* {
-  box-sizing: border-box;
-}
+// make
 
 body {
   font: 18px/27px 'Roboto', serif;
@@ -53,6 +51,11 @@ h3 {
   text-transform: uppercase;
 }
 
+h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -75,6 +78,10 @@ h3 {
 
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-15 {
+  margin-right: 15px;
 }
 
 .mr-16 {
@@ -121,6 +128,18 @@ h3 {
   margin-top: 0;
 }
 
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-17 {
+  margin-top: 17px;
+}
+
+.mt-18 {
+  margin-top: 18px;
+}
+
 .mb-45 {
   margin-bottom: 45px;
 }
@@ -135,6 +154,10 @@ h3 {
 
 .mt-48 {
   margin-top: 48px;
+}
+
+.mt-50 {
+  margin-top: 50px;
 }
 
 .mt-64 {
@@ -221,6 +244,10 @@ h3 {
 
 .gap-50 {
   gap: 50px;
+}
+
+.gap-25-50 {
+  gap: 25px 50px;
 }
 
 
@@ -521,13 +548,91 @@ header {
 
 // --------------------------Artist main------------------------------//
 
+.page-popular-track {
+  box-sizing: border-box;
+}
+
+.popular-track-cover {
+  width: 55px;
+}
+
+.popular-track {
+  width: calc((1200px - 50px) / 2);
+
+  align-items: center;
+}
+
 .bg-image-artist {
   background-image: url(../images/Morten\ Harket.png);
   background-position: center;
   background-size: cover;
 }
 
-// --------------------------Footer------------------------------//
+.artist-btn {
+  gap: 1.5rem;
+
+  .btn {
+    box-sizing: border-box;
+    display: flex;
+    width: 200px;
+    padding: 20px 30px;
+    border: none;
+    font-size: 12.8px;
+    line-height: 19.2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-self: start;
+
+  }
+}
+
+.btn-orange {
+  background-color: $red;
+}
+
+.btn-purple {
+  background-color: $purple;
+}
+
+.icon {
+  width: 20px;
+  filter: invert(100%);
+}
+
+.track-title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// --------------------------Discography-----------------------------//
+
+.album-cover {
+  width: 250px;
+  display: block;
+}
+
+.album-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+// --------------------------Similar artists--------------------------//
+
+.artist-cover {
+  width: 250px;
+  display: block;
+}
+
+.artist-name {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+// --------------------------Footer-----------------------------------//
 
 footer {
   h2 {
@@ -546,7 +651,6 @@ footer {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  // columns: 4;
 }
 
 .footer-col {
