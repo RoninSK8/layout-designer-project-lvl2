@@ -56,6 +56,7 @@ h4 {
 }
 
 .container {
+  box-sizing: border-box;
   padding: 0 20px;
   margin: 0 auto;
   max-width: 1200px;
@@ -179,16 +180,12 @@ h4 {
   margin-top: 100px;
 }
 
-.pt-2 {
-  padding-top: 2px;
+.px-2 {
+  padding: 2px 0;
 }
 
 .pt-40 {
   padding-top: 40px;
-}
-
-.pb-2 {
-  padding-bottom: 2px;
 }
 
 .pb-49 {
@@ -279,7 +276,7 @@ h4 {
 header {
   position: absolute;
   width: 100%;
-  margin-top: 25px;
+  top: 25px;
   font-size: 11px;
   line-height: 12.89px;
   align-items: center;
@@ -317,7 +314,7 @@ header {
     font-size: 11px;
     line-height: 12.89px;
     color: $dark-gray;
-    padding: 0;
+    padding: 2px 0;
     text-decoration: none;
   }
 
@@ -725,12 +722,12 @@ footer {
     line-height: 24px;
   }
 
-  .mt-50-m {
-    margin-top: 50px;
+  .mt-48-m {
+    margin-top: 48px;
   }
 
   .container {
-    // box-sizing: border-box;
+    box-sizing: border-box;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0;
@@ -745,11 +742,15 @@ footer {
 
   .navigation {
     flex-direction: column;
-    gap: 4px;
+    gap: 0;
     font-weight: 700;
     line-height: 12.89px;
     margin-top: 17px;
     margin-bottom: 18px;
+  }
+
+  .nav-item {
+    padding: 2px 0;
   }
 
   .logo {
