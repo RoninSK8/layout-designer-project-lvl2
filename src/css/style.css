@@ -641,6 +641,10 @@ footer ul {
     line-height: 24px;
   }
 
+  .mt-50-m {
+    margin-top: 50px;
+  }
+
   .container {
     box-sizing: border-box;
     padding-left: 20px;
