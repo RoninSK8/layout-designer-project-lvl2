@@ -716,6 +716,10 @@ footer ul {
     width: 100%;
   }
 
+  .footer-col {
+    width: 100%;
+  }
+
   .footer-top {
     margin-top: 100px;
     gap: 30px;
