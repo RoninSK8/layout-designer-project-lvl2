@@ -252,6 +252,8 @@ header {
   width: 100%;
   margin-top: 25px;
   font-size: 11px;
+  line-height: 12.89px;
+  align-items: center;
 }
 
 .logo-image {
@@ -273,8 +275,9 @@ header {
 }
 .navigation .nav-item {
   font-size: 11px;
+  line-height: 12.89px;
   color: #CACACA;
-  padding: 2px 0;
+  padding: 0;
   text-decoration: none;
 }
 .navigation .flex-row {
@@ -295,6 +298,7 @@ header {
 .flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .flex-column {
@@ -484,6 +488,10 @@ header {
   text-transform: capitalize;
 }
 
+.artist-main-header {
+  margin-top: 50px;
+}
+
 .page-popular-track {
   box-sizing: border-box;
 }
@@ -504,7 +512,7 @@ header {
 }
 
 .artist-btn {
-  gap: 1.5rem;
+  gap: 1.5rem 1.5rem;
 }
 .artist-btn .btn {
   box-sizing: border-box;
@@ -713,6 +721,10 @@ footer ul {
 
   .footer-bottom {
     flex-direction: column;
+  }
+
+  .artist-main-header {
+    margin-top: 25px;
   }
 
   .popular-track {

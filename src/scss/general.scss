@@ -261,6 +261,8 @@ header {
   width: 100%;
   margin-top: 25px;
   font-size: 11px;
+  line-height: 12.89px;
+  align-items: center;
 }
 
 .logo-image {
@@ -287,12 +289,16 @@ header {
   margin: 0;
   gap: 24px;
 
+  // li {
+  //   display: inline-block;
+  //   line-height: 17px;
+  // }
   .nav-item {
     font-size: 11px;
+    line-height: 12.89px;
     color: $dark-gray;
-    padding: 2px 0;
+    padding: 0;
     text-decoration: none;
-    
   }
 
   .flex-row {
@@ -314,6 +320,7 @@ header {
 .flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .flex-column {
@@ -532,6 +539,10 @@ header {
 }
 
 // --------------------------Artist main------------------------------//
+
+.artist-main-header {
+  margin-top: 50px;
+}
 
 .page-popular-track {
   box-sizing: border-box;
@@ -792,6 +803,10 @@ footer {
   // .artist-page-description {
   //   padding: 225px 0 250px 0;
   // }
+
+  .artist-main-header {
+    margin-top: 25px;
+  }
 
   .popular-track {
     width: 100%;
