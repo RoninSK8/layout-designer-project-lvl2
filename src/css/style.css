@@ -39,8 +39,7 @@ h2 {
 
 h3 {
   margin: 0;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   text-transform: uppercase;
@@ -140,6 +139,10 @@ h4 {
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mt-25 {
+  margin-top: 25px;
 }
 
 .mt-43 {
@@ -315,7 +318,7 @@ header {
 }
 
 .page-description {
-  padding: 250px 0 250px 0;
+  padding: 200px 0;
 }
 
 .description {
@@ -424,13 +427,12 @@ header {
   font-weight: normal;
   font-size: 30px;
   line-height: 45px;
-  text-transform: none;
+  text-transform: capitalize;
 }
 .news-body p {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  text-transform: none;
 }
 
 .author-name {
@@ -479,7 +481,7 @@ header {
   padding: 16px 40px;
   border-radius: 32px;
   border: none;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .page-popular-track {
@@ -548,7 +550,7 @@ header {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 .similar-item {
@@ -564,7 +566,7 @@ header {
   font-size: 18px;
   line-height: 27px;
   font-weight: 700;
-  text-transform: none;
+  text-transform: capitalize;
 }
 
 footer h2 {
@@ -662,10 +664,6 @@ footer ul {
     width: 100%;
   }
 
-  .page-description {
-    padding-top: 250px;
-  }
-
   .description {
     margin-top: 16px;
   }
@@ -718,10 +716,6 @@ footer ul {
 
   .footer-bottom {
     flex-direction: column;
-  }
-
-  .page-description {
-    padding: 225px 0 250px 0;
   }
 
   .popular-track {
