@@ -56,7 +56,7 @@ h4 {
 }
 
 .container {
-  box-sizing: border-box;
+  box-sizing: content-box;
   padding: 0 20px;
   margin: 0 auto;
   max-width: 1200px;
@@ -408,6 +408,10 @@ header {
 
 .page-pricing {
   padding-top: 100px;
+}
+
+.pricing {
+  flex-wrap: nowrap;
 }
 
 .pricing-item {
