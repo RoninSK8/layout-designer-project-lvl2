@@ -484,6 +484,10 @@ header {
   border: 1px solid #CACACA;
 }
 
+.news-item:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+
 .mobile-app-description {
   margin: 0;
   width: 600px;
@@ -509,10 +513,6 @@ header {
 
 .artist-main-header {
   margin-top: 50px;
-}
-
-.page-popular-track {
-  box-sizing: border-box;
 }
 
 .popular-track-cover {
@@ -726,13 +726,13 @@ footer ul {
     width: 100%;
   }
 
-  .page-news .news-item:nth-child(2n+1) {
-    flex-direction: column-reverse;
-  }
-
   .news-body h3 {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .news-item:nth-child(2n+1) {
+    flex-direction: column;
   }
 
   .mobile-app {
