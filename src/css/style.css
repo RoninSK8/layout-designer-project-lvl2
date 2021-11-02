@@ -98,6 +98,10 @@ h4 {
   margin-bottom: 15px;
 }
 
+.mb-16 {
+  margin-bottom: 15px;
+}
+
 .mb-25 {
   margin-bottom: 25px;
 }
@@ -458,6 +462,10 @@ header {
   line-height: 24px;
 }
 
+.news-text {
+  margin-top: 30px;
+}
+
 .author-name {
   margin: 0;
   color: #F89202;
@@ -718,6 +726,10 @@ footer ul {
   .news-item {
     flex-direction: column;
     width: 100%;
+  }
+
+  .news-text {
+    margin-top: 16px;
   }
 
   .news-image,
