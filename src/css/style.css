@@ -150,7 +150,7 @@ h4 {
 }
 
 .mt-40 {
-  margin-top: 43px;
+  margin-top: 40px;
 }
 
 .mb-46 {
@@ -723,6 +723,10 @@ footer ul {
     box-sizing: border-box;
     padding-top: 19px;
     width: 100%;
+  }
+  .pricing-item h3 {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .news-item {
