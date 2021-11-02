@@ -157,7 +157,7 @@ h4 {
   margin-top: 25px;
 }
 
-.mt-43 {
+.mt-40 {
   margin-top: 43px;
 }
 
@@ -434,14 +434,24 @@ header {
   margin: 0 0 40px 0;
 }
 
-.pricing-value::after {
-  position: relative;
-  top: -8px;
-  left: 16px;
-  content: "РУБ.";
+// .pricing-value::after {
+//   position: relative;
+//   top: -8px;
+//   left: 16px;
+//   content: "РУБ.";
+//   font-size: 32px;
+//   vertical-align: top;
+//   color: $white;
+// }
+
+.pricing-currency {
+  font-weight: 400;
   font-size: 32px;
-  vertical-align: top;
-  color: $white;
+  line-height: 48px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding: 0;
 }
 
 .btn {
