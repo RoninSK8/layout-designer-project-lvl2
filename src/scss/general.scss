@@ -1,32 +1,33 @@
 @font-face {
   font-weight: 400;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.ttf');
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-weight: 500;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Medium.ttf');
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Medium.ttf");
 }
 
 @font-face {
   font-weight: 700;
-  font-family: 'Roboto';
-  src: url('../fonts/Roboto-Bold.ttf');
+  font-family: Roboto;
+  src: url("../fonts/Roboto-Bold.ttf");
 }
 
-// make
-
 body {
-  font: 18px/27px 'Roboto', serif;
-  color: #cacaca;
-  background: #08020d;
   margin: 0;
+
+  color: $dark-gray;
+  font: 18px/27px Roboto, serif;
+
+  background: $black;
 }
 
 h1 {
   margin: 0;
+
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -35,6 +36,7 @@ h1 {
 
 h2 {
   margin: 0;
+
   font-weight: 700;
   font-size: 38px;
   line-height: 57px;
@@ -43,6 +45,7 @@ h2 {
 
 h3 {
   margin: 0;
+
   font-weight: 400;
   font-size: 24px;
   line-height: 36px;
@@ -57,13 +60,13 @@ h4 {
 
 .container {
   box-sizing: content-box;
-  padding: 0 20px;
-  margin: 0 auto;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .image {
-  // background-image: url('...');
+  // background-image: url("...");
   background-position: center;
   background-size: cover;
 }
@@ -97,7 +100,7 @@ h4 {
 }
 
 .mb-0 {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .mb-15 {
@@ -147,7 +150,6 @@ h4 {
 .mt-18 {
   margin-top: 18px;
 }
-
 
 .mt-24 {
   margin-top: 24px;
@@ -275,22 +277,23 @@ h4 {
   width: fit-content;
 }
 
-
-
 // -------------------------------Header----------------------//
 header {
   position: absolute;
-  width: 100%;
   top: 25px;
+
+  align-items: center;
+  width: 100%;
+
   font-size: 11px;
   line-height: 12.89px;
-  align-items: center;
 }
 
 .logo-image {
   width: 24px;
   height: 24px;
 }
+
 .bg-image-header {
   // position: absolute;
 
@@ -306,25 +309,28 @@ header {
 }
 
 .navigation {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
   gap: 24px;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 
   // li {
   //   display: inline-block;
   //   line-height: 17px;
   // }
   .nav-item {
+    padding: 2px 0;
+
+    color: $dark-gray;
     font-size: 11px;
     line-height: 12.89px;
-    color: $dark-gray;
-    padding: 2px 0;
     text-decoration: none;
   }
 
   .flex-row {
     padding: 24px;
+
     color: honeydew;
   }
 }
@@ -353,15 +359,16 @@ header {
   height: 25px;
 
   padding: 5px 10px;
-  background: #3C3B3D;
-  border-radius: 50px;
   border-style: none;
+  border-radius: 50px;
+
+  background: #3c3b3d;
 }
 
 .main-page {
-  height: 750px;
-  justify-content: center;
   align-content: center;
+  justify-content: center;
+  height: 750px;
 }
 
 .page-description {
@@ -371,27 +378,30 @@ header {
 .description {
   margin-top: 31px;
   margin-bottom: 17px;
+
   font-weight: 400;
 }
 
 .signup-submit {
   width: 100%;
   padding: 20px 0;
-  border-radius: 5px;
-  background-color: $green;
-  text-transform: uppercase;
-  color: $white;
   border-style: none;
+  border-radius: 5px;
+
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: $green;
   cursor: pointer;
 }
 
 .signup-form {
-  margin: auto;
-  max-width: 570px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   gap: 24px;
+  align-items: center;
+  max-width: 570px;
+  margin: auto;
 }
 
 .input-form {
@@ -401,7 +411,9 @@ header {
   padding-left: 20px;
   border: 2px solid $dark-gray;
   border-radius: 3px;
+
   font-weight: 700;
+
   background: transparent;
 }
 
@@ -421,18 +433,20 @@ header {
 
 .pricing-item {
   box-sizing: border-box;
-  padding: 24px 1.5rem 64px 1.5rem;
   width: calc((1200px - 100px) / 3);
+  padding: 24px 1.5rem 64px;
   border-radius: 1rem;
+
   background-position: center;
   background-size: cover;
 }
 
 .pricing-value {
+  height: 64px;
+  margin: 0 0 39px;
+
   font-size: 64px;
   line-height: 1em;
-  height: 64px;
-  margin: 0 0 39px 0;
 }
 
 // .pricing-value::after {
@@ -446,29 +460,32 @@ header {
 // }
 
 .pricing-currency {
+
+  margin: 0;
+  padding: 0;
+
   font-weight: 400;
   font-size: 32px;
   line-height: 48px;
   text-transform: uppercase;
-
-  margin: 0;
-  padding: 0;
 }
 
 .btn {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   width: 100%;
   padding: 20px 30px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: $white;
+
+  border: 1px solid #fff;
   border-style: none;
-  cursor: pointer;
-  background: transparent;
+  border-radius: 5px;
+
+  color: $white;
+  text-transform: uppercase;
   text-decoration: none;
 
-  border: 1px solid #FFFFFF;
+  background: transparent;
+  cursor: pointer;
 
   // box-sizing: border-box;
   // width: 273px;
@@ -503,7 +520,7 @@ header {
     font-weight: normal;
     font-size: 30px;
     line-height: 45px;
-  
+
     text-transform: capitalize;
   }
 
@@ -520,6 +537,7 @@ header {
 
 .author-name {
   margin: 0;
+
   color: $orange;
   font-weight: normal;
   font-size: 12px;
@@ -536,18 +554,18 @@ header {
 
 .news-footer {
   .btn {
-      font-size: 12px;
-      line-height: 19.2px;
-      color: $dark-gray;
 
-      display: inline-block;
-      width: auto;
-      margin-top: 48px;
-      padding: 16px 30px;
-    
-      border: 1px solid $dark-gray;
-    
-    }
+    display: inline-block;
+    width: auto;
+    margin-top: 48px;
+    padding: 16px 30px;
+
+    border: 1px solid $dark-gray;
+
+    color: $dark-gray;
+    font-size: 12px;
+    line-height: 19.2px;
+  }
 }
 
 .news-item:nth-child(2n+1) {
@@ -557,28 +575,30 @@ header {
 // -----------------------Mobile app section-----------------------------//
 
 .mobile-app-description {
-  margin: 0;
   width: 600px;
+  margin: 0;
 }
 
-.mobile-app-image{
+.mobile-app-image {
   margin: 0 auto;
 }
 
 .download-mobile-app {
-  font-size: 12.8px;
-  line-height: 19.2px;
-  color: $white;
-  background: $red;
+  display: inline-block;
 
   box-sizing: border-box;
-  display: inline-block;
   width: fit-content;
   padding: 16px 40px;
-  border-radius: 32px;
 
   border: none;
+  border-radius: 32px;
+
+  color: $white;
+  font-size: 12.8px;
+  line-height: 19.2px;
   text-transform: capitalize;
+
+  background: $red;
 }
 
 // --------------------------Artist main------------------------------//
@@ -592,9 +612,9 @@ header {
 }
 
 .popular-track {
-  width: calc((1200px - 100px) / 2);
 
   align-items: center;
+  width: calc((1200px - 100px) / 2);
 }
 
 .bg-image-artist {
@@ -607,17 +627,17 @@ header {
   gap: 1.5rem;
 
   .btn {
-    box-sizing: border-box;
     display: flex;
+    align-self: start;
+    box-sizing: border-box;
     width: 200px;
     padding: 20px 30px;
     border: none;
+
+    font-weight: 400;
     font-size: 12.8px;
     line-height: 19.2px;
-    font-weight: 400;
     text-transform: uppercase;
-    align-self: start;
-
   }
 }
 
@@ -631,6 +651,7 @@ header {
 
 .icon {
   width: 20px;
+
   filter: invert(100%);
 }
 
@@ -646,14 +667,14 @@ header {
 }
 
 .album-cover {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .album-title {
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -664,14 +685,14 @@ header {
 }
 
 .artist-cover {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .artist-name {
+  font-weight: 700;
   font-size: 18px;
   line-height: 27px;
-  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -679,15 +700,16 @@ header {
 
 footer {
   h2 {
+    color: $white;
+    font-weight: bold;
     font-size: 18px;
     line-height: 27px;
-    font-weight: bold;
-    color: $white;
   }
 
   ul {
-    list-style-type: none;
     padding: 0;
+
+    list-style-type: none;
   }
 }
 
@@ -701,17 +723,16 @@ footer {
 }
 
 .border-top {
-  border-top: 1px solid #CACACA;
   box-sizing: border-box;
-  border-radius: 0px;
+  border-top: 1px solid #cacaca;
+  border-radius: 0;
 }
 
 .footer-link {
+  color: $dark-gray;
   font-size: 16px;
   line-height: 24px;
   text-decoration: none;
-  color: $dark-gray;
-  
 }
 
 .footer-link:hover {
@@ -734,7 +755,6 @@ footer {
 // ----------------------------------------------------------------------//
 
 @media (max-width: 1239px) {
-
   h1 {
     font-size: 30px;
     line-height: 45px;
@@ -756,10 +776,10 @@ footer {
 
   .container {
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
     width: 100%;
+    margin: 0;
+    padding-right: 20px;
+    padding-left: 20px;
   }
 
   .header {
@@ -771,10 +791,11 @@ footer {
   .navigation {
     flex-direction: column;
     gap: 0;
-    font-weight: 700;
-    line-height: 12.89px;
     margin-top: 17px;
     margin-bottom: 18px;
+
+    font-weight: 700;
+    line-height: 12.89px;
   }
 
   .nav-item {
@@ -782,7 +803,7 @@ footer {
   }
 
   .logo {
-    font-weight: 700;    
+    font-weight: 700;
   }
 
   .search {
@@ -803,13 +824,13 @@ footer {
 
   .pricing-item {
     box-sizing: border-box;
-    padding-top: 19px;
     width: 100%;
-
+    padding-top: 19px;
   }
 
   .news-item {
     flex-direction: column;
+
     // align-items: center;
     width: 100%;
   }
@@ -848,8 +869,8 @@ footer {
   }
 
   .footer-top {
-    margin-top: 100px;
     gap: 30px;
+    margin-top: 100px;
   }
 
   .footer-bottom {
@@ -857,7 +878,7 @@ footer {
   }
 
   // ------------------------Artist--------------------------//
-  
+
   .artist-main-header {
     margin-top: 25px;
   }
