@@ -295,17 +295,14 @@ header {
 }
 
 .bg-image-header {
-  // position: absolute;
-
-  // top: 0;
-  // right: 0;
-
-  // width: 100%;
-  // height: 100%;
-
   background-image: url(../images/banner.png);
   background-position: center;
   background-size: cover;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .navigation {
@@ -342,11 +339,6 @@ header {
 .flex {
   display: flex;
   flex-wrap: wrap;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
 }
 
 .flex-column {
@@ -448,16 +440,6 @@ header {
   font-size: 64px;
   line-height: 1em;
 }
-
-// .pricing-value::after {
-//   position: relative;
-//   top: -8px;
-//   left: 16px;
-//   content: "РУБ.";
-//   font-size: 32px;
-//   vertical-align: top;
-//   color: $white;
-// }
 
 .pricing-currency {
 
@@ -652,7 +634,7 @@ header {
 .icon {
   width: 20px;
 
-  filter: invert(100%);
+  filter: color.invert(100%);
 }
 
 .track-title {
